@@ -16,6 +16,7 @@ export default class Component {
 
         const dataAttr = this.$el.getAttribute('x-data')
         const dataExpression = dataAttr === '' ? '{}' : dataAttr
+        const initExpression = this.$el.getAttribute('x-init')
 
         let dataExtras = {
             $el: this.$el,
@@ -81,8 +82,6 @@ export default class Component {
         this.showDirectiveLastElement
 
         componentForClone || Alpine.onBeforeComponentInitializeds.forEach(callback => callback(this))
-        
-        const initExpression = this.$el.getAttribute('x-init')
 
         var initReturnedCallback
         // If x-init is present AND we aren't cloning (skip x-init on clone)
