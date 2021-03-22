@@ -14,6 +14,7 @@ Think of it like [Tailwind](https://tailwindcss.com/) for JavaScript.
 
 ## Translated documentation
 
+
 | Language | Link for documentation |
 | --- | --- |
 | Arabic | [**التوثيق باللغة العربية**](./README.ar.md) |
